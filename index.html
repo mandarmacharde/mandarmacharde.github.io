@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A portfolio showcasing my skills and projects as a developer.">
+    <title>Mandar's Portfolio</title>
+
+    <!-- Link to CSS File -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- AOS Library for Scroll Reveal -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loader">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Stars Background -->
+    <div class="stars"></div>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1 id="dynamic-name" data-text="Mandar Macharde">Mandar Macharde</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" data-aos="fade-up" data-aos-duration="1000">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h2>Crafting Digital Experiences</h2>
+                        <p class="hero-subtitle">Full-Stack Developer</p>
+                        <p class="hero-description">Transforming ideas into elegant, high-performance web applications with modern technologies and clean code.</p>
+                        <div class="hero-buttons">
+                            <a href="#projects" class="btn primary-btn">View My Work</a>
+                            <a href="#contact" class="btn secondary-btn">Let's Connect</a>
+                        </div>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">2+</span>
+                            <span class="stat-label">Years Experience</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">15+</span>
+                            <span class="stat-label">Projects Completed</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label">Client Satisfaction</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" data-aos="fade-up" data-aos-duration="1000">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p class="about-intro">Hello! I'm Mandar, a passionate Full-Stack Developer based in India who loves building things for the web.</p>
+                        <p class="about-description">With a keen eye for detail and a drive for excellence, I specialize in creating responsive and performant web applications. My journey in web development started 2 years ago, and since then, I've been constantly learning and growing in this ever-evolving field.</p>
+                        <div class="about-focus">
+                            <h3>What I focus on:</h3>
+                            <ul class="focus-list">
+                                <li><i class="fas fa-code"></i> Clean, efficient code</li>
+                                <li><i class="fas fa-mobile-alt"></i> Responsive design</li>
+                                <li><i class="fas fa-tachometer-alt"></i> Performance optimization</li>
+                                <li><i class="fas fa-universal-access"></i> Accessibility</li>
+                                <li><i class="fas fa-layer-group"></i> Scalable architecture</li>
+                                <li><i class="fas fa-shield-alt"></i> Security best practices</li>
+                            </ul>
+                        </div>
+                        <div class="about-philosophy">
+                            <h3>My Philosophy</h3>
+                            <p>I believe in writing code that's not just functional, but also maintainable and scalable. Every project is an opportunity to create something meaningful that delivers real value to users.</p>
+                        </div>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat-card">
+                            <i class="fas fa-rocket"></i>
+                            <h4>Fast Learner</h4>
+                            <p>Quick to adapt and master new technologies, always staying ahead of industry trends</p>
+                        </div>
+                        <div class="stat-card">
+                            <i class="fas fa-users"></i>
+                            <h4>Team Player</h4>
+                            <p>Strong collaboration skills with experience in agile environments</p>
+                        </div>
+                        <div class="stat-card">
+                            <i class="fas fa-lightbulb"></i>
+                            <h4>Problem Solver</h4>
+                            <p>Analytical thinker who loves tackling complex challenges</p>
+                        </div>
+                        <div class="stat-card">
+                            <i class="fas fa-heart"></i>
+                            <h4>Passionate Coder</h4>
+                            <p>Deeply committed to writing quality code and creating exceptional user experiences</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" data-aos="fade-up" data-aos-duration="1000">
+            <div class="container">
+                <h2 class="section-title">Skills & Technologies</h2>
+                <div class="skills-container">
+                    <div class="skills-category">
+                        <h3><i class="fas fa-code"></i> Frontend Development</h3>
+                        <ul class="skills-list">
+                            <li><i class="fab fa-html5"></i>HTML5</li>
+                            <li><i class="fab fa-css3-alt"></i>CSS3</li>
+                            <li><i class="fab fa-js"></i>JavaScript</li>
+                            <li><i class="fab fa-react"></i>React.js</li>
+                            <li><i class="fab fa-sass"></i>Sass</li>
+                            <li><i class="fas fa-mobile-alt"></i>Responsive Design</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="skills-category">
+                        <h3><i class="fas fa-server"></i> Backend Development</h3>
+                        <ul class="skills-list">
+                            <li><i class="fab fa-node-js"></i>Node.js</li>
+                            <li><i class="fas fa-database"></i>MongoDB</li>
+                            <li><i class="fas fa-server"></i>Express.js</li>
+                            <li><i class="fas fa-key"></i>REST APIs</li>
+                            <li><i class="fas fa-shield-alt"></i>Authentication</li>
+                            <li><i class="fas fa-database"></i>SQL</li>
+                        </ul>
+                    </div>
+
+                    <div class="skills-category">
+                        <h3><i class="fas fa-tools"></i> Tools & DevOps</h3>
+                        <ul class="skills-list">
+                            <li><i class="fab fa-git-alt"></i>Git</li>
+                            <li><i class="fab fa-github"></i>GitHub</li>
+                            <li><i class="fas fa-terminal"></i>Command Line</li>
+                            <li><i class="fab fa-npm"></i>npm</li>
+                            <li><i class="fas fa-code-branch"></i>Version Control</li>
+                            <li><i class="fas fa-cloud"></i>Deployment</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" data-aos="fade-up" data-aos-duration="1000">
+            <div class="container">
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="project-grid">
+                    <div class="project">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&q=80&w=1000" alt="Task Management Application - Screenshot showing the main dashboard">
+                            <div class="project-overlay">
+                                <div class="project-tech">
+                                    <span>React.js</span>
+                                    <span>Node.js</span>
+                                    <span>MongoDB</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Task Management App</h3>
+                            <p>A full-stack task management application with real-time updates, task categorization, and team collaboration features. Built with modern web technologies focusing on performance and user experience.</p>
+                            <ul class="project-features">
+                                <li><i class="fas fa-check"></i> Real-time updates using WebSocket</li>
+                                <li><i class="fas fa-check"></i> Drag-and-drop task organization</li>
+                                <li><i class="fas fa-check"></i> Team collaboration tools</li>
+                            </ul>
+                            <div class="project-links">
+                                <a href="#" target="_blank" rel="noopener noreferrer" class="project-btn">
+                                    <i class="fab fa-github"></i> View Code
+                                </a>
+                                <a href="#" target="_blank" rel="noopener noreferrer" class="project-btn">
+                                    <i class="fas fa-external-link-alt"></i> Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1557821552-17105176677c?auto=format&fit=crop&q=80&w=1000" alt="E-commerce Platform - Screenshot showing product listings">
+                            <div class="project-overlay">
+                                <div class="project-tech">
+                                    <span>Next.js</span>
+                                    <span>Stripe</span>
+                                    <span>PostgreSQL</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>E-commerce Platform</h3>
+                            <p>A modern e-commerce platform with seamless payment integration, advanced search capabilities, and a responsive design. Built with Next.js for optimal performance and SEO.</p>
+                            <ul class="project-features">
+                                <li><i class="fas fa-check"></i> Secure payment processing</li>
+                                <li><i class="fas fa-check"></i> Advanced product filtering</li>
+                                <li><i class="fas fa-check"></i> Real-time inventory management</li>
+                            </ul>
+                            <div class="project-links">
+                                <a href="#" target="_blank" rel="noopener noreferrer" class="project-btn">
+                                    <i class="fab fa-github"></i> View Code
+                                </a>
+                                <a href="#" target="_blank" rel="noopener noreferrer" class="project-btn">
+                                    <i class="fas fa-external-link-alt"></i> Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" data-aos="fade-up" data-aos-duration="1000">
+            <div class="container">
+                <h2 class="section-title">Let's Connect</h2>
+                <div class="contact-content">
+                    <div class="contact-text">
+                        <p class="contact-intro">I'm always interested in hearing about new opportunities and exciting projects.</p>
+                        <p class="contact-description">Whether you have a question, want to collaborate, or just want to say hello, I'll try my best to get back to you!</p>
+                    </div>
+                    <div class="contact-methods">
+                        <div class="contact-card">
+                            <i class="fas fa-envelope"></i>
+                            <h3>Email</h3>
+                            <a href="#">Contact via Email</a>
+                        </div>
+                        <div class="contact-card">
+                            <i class="fab fa-linkedin"></i>
+                            <h3>LinkedIn</h3>
+                            <a href="#" target="_blank" rel="noopener noreferrer">Professional Profile</a>
+                        </div>
+                        <div class="contact-card">
+                            <i class="fab fa-github"></i>
+                            <h3>GitHub</h3>
+                            <a href="#" target="_blank" rel="noopener noreferrer">Code Repository</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="currentYear"></span> Mandar. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- AOS Script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            once: true,
+            offset: 100,
+            delay: 200
+        });
+
+        // Create stars
+        function createStars() {
+            const starsContainer = document.querySelector('.stars');
+            const numberOfStars = 200;
+
+            for (let i = 0; i < numberOfStars; i++) {
+                const star = document.createElement('div');
+                star.className = 'star';
+                
+                // Random position
+                star.style.left = `${Math.random() * 100}%`;
+                star.style.top = `${Math.random() * 100}%`;
+                
+                // Random size
+                const size = Math.random() * 2;
+                star.style.width = `${size}px`;
+                star.style.height = `${size}px`;
+                
+                // Random animation duration
+                star.style.setProperty('--duration', `${2 + Math.random() * 3}s`);
+                
+                starsContainer.appendChild(star);
+            }
+        }
+
+        // Set current year in footer
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        // Hide Loading Screen and initialize stars
+        window.addEventListener('load', () => {
+            document.getElementById('loader').style.display = 'none';
+            document.body.classList.add('loaded');
+            createStars();
+            // Remove scrolled class on load if at top
+            if (window.scrollY === 0) {
+                document.querySelector('header').classList.remove('scrolled');
+            }
+        });
+
+        // Dynamic Header Behavior on Scroll
+        const header = document.querySelector('header');
+        let lastScrollY = window.scrollY;
+        let ticking = false;
+
+        window.addEventListener('scroll', () => {
+            if (!ticking) {
+                requestAnimationFrame(() => {
+                    const currentScrollY = window.scrollY;
+                    if (currentScrollY > 50) {
+                        const scale = Math.max(0.7, 1 - currentScrollY / 500);
+                        header.style.transform = `scale(${scale})`;
+                        header.style.height = `${Math.max(80, 100 - currentScrollY / 2)}px`;
+                        header.classList.add('scrolled');
+                    } else {
+                        header.style.transform = 'scale(1)';
+                        header.style.height = '100vh';
+                        header.classList.remove('scrolled');
+                    }
+                    ticking = false;
+                });
+                ticking = true;
+            }
+        });
+
+        // Initial check for scroll position
+        if (window.scrollY === 0) {
+            header.classList.remove('scrolled');
+        }
+    </script>
+</body>
+</html>
