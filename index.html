@@ -3,32 +3,201 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mandar Macharde - Portfolio</title>
-    <link rel="stylesheet" href="style.css"> <!-- Link to the CSS file -->
+    <meta name="description" content="A portfolio showcasing my skills and projects as a developer.">
+    <title>Mandar's Portfolio</title>
+
+    <!-- Link to CSS File -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- AOS Library for Scroll Reveal -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
+    <!-- Loading Screen -->
+    <div id="loader">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Stars Background -->
+    <div class="stars"></div>
+
+    <!-- Header -->
     <header>
-        <h1>Hi, I'm Mandar Macharde</h1>
-        <p>Welcome to my portfolio!</p>
+        <div class="container">
+            <h1 id="dynamic-name" data-text="Mandar Macharde">Mandar Macharde</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I am a web developer and software engineer passionate about creating interactive websites and applications.</p>
-    </section>
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" data-aos="fade-up" data-aos-duration="1000">
+            <div class="container">
+                <h2>Welcome to My Portfolio</h2>
+                <p>I'm a developer passionate about building web applications and solving real-world problems.</p>
+                <a href="#projects" class="btn">View My Work</a>
+            </div>
+        </section>
 
-    <section id="projects">
-        <h2>My Projects</h2>
-        <ul>
-            <li><a href="#">Project 1</a></li>
-            <li><a href="#">Project 2</a></li>
-            <li><a href="#">Project 3</a></li>
-        </ul>
-    </section>
+        <!-- About Section -->
+        <section id="about" data-aos="fade-up" data-aos-duration="1000">
+            <div class="container">
+                <h2>About Me</h2>
+                <p>I'm a full-stack developer with experience in HTML, CSS, JavaScript, and frameworks like React and Node.js.</p>
+            </div>
+        </section>
 
+        <!-- Projects Section -->
+        <section id="projects" data-aos="fade-up" data-aos-duration="1000">
+            <div class="container">
+                <h2>Projects</h2>
+                <div class="project-grid">
+                    <div class="project">
+                        <img src="assets/project1.jpg" alt="Task Management Application - Screenshot showing the main dashboard">
+                        <h3>Task Management App</h3>
+                        <p>A full-stack task management application built with React, Node.js, and MongoDB. Features include real-time updates, task categorization, and team collaboration.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/mandar-macharde/task-manager" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> View Code</a>
+                            <a href="https://task-manager-demo.herokuapp.com" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <img src="assets/project2.jpg" alt="E-commerce Platform - Screenshot showing product listings">
+                        <h3>E-commerce Platform</h3>
+                        <p>An e-commerce platform built with Next.js and Stripe integration. Features include product search, shopping cart, secure payments, and order tracking.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/mandar-macharde/ecommerce-platform" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> View Code</a>
+                            <a href="https://ecommerce-demo.vercel.app" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" data-aos="fade-up" data-aos-duration="1000">
+            <div class="container">
+                <h2>Skills</h2>
+                <ul class="skills-list">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>React</li>
+                    <li>Node.js</li>
+                    <li>Git</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" data-aos="fade-up" data-aos-duration="1000">
+            <div class="container">
+                <h2>Contact</h2>
+                <p>Email: <a href="mailto:mandar.macharde@gmail.com">mandar.macharde@gmail.com</a></p>
+                <p>LinkedIn: <a href="https://linkedin.com/in/mandar-macharde" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a></p>
+                <p>GitHub: <a href="https://github.com/mandar-macharde" target="_blank" rel="noopener noreferrer">GitHub Profile</a></p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
     <footer>
-        <p>Contact: <a href="mailto:mandarmacharde@gmail.com">mandarmacharde@gmail.com</a></p>
+        <div class="container">
+            <p>&copy; <span id="currentYear"></span> Mandar. All rights reserved.</p>
+        </div>
     </footer>
+
+    <!-- AOS Script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            once: true,
+            offset: 100,
+            delay: 200
+        });
+
+        // Create stars
+        function createStars() {
+            const starsContainer = document.querySelector('.stars');
+            const numberOfStars = 200;
+
+            for (let i = 0; i < numberOfStars; i++) {
+                const star = document.createElement('div');
+                star.className = 'star';
+                
+                // Random position
+                star.style.left = `${Math.random() * 100}%`;
+                star.style.top = `${Math.random() * 100}%`;
+                
+                // Random size
+                const size = Math.random() * 2;
+                star.style.width = `${size}px`;
+                star.style.height = `${size}px`;
+                
+                // Random animation duration
+                star.style.setProperty('--duration', `${2 + Math.random() * 3}s`);
+                
+                starsContainer.appendChild(star);
+            }
+        }
+
+        // Set current year in footer
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        // Hide Loading Screen and initialize stars
+        window.addEventListener('load', () => {
+            document.getElementById('loader').style.display = 'none';
+            document.body.classList.add('loaded');
+            createStars();
+            // Remove scrolled class on load if at top
+            if (window.scrollY === 0) {
+                document.querySelector('header').classList.remove('scrolled');
+            }
+        });
+
+        // Dynamic Header Behavior on Scroll
+        const header = document.querySelector('header');
+        let lastScrollY = window.scrollY;
+        let ticking = false;
+
+        window.addEventListener('scroll', () => {
+            if (!ticking) {
+                requestAnimationFrame(() => {
+                    const currentScrollY = window.scrollY;
+                    if (currentScrollY > 50) {
+                        const scale = Math.max(0.7, 1 - currentScrollY / 500);
+                        header.style.transform = `scale(${scale})`;
+                        header.style.height = `${Math.max(80, 100 - currentScrollY / 2)}px`;
+                        header.classList.add('scrolled');
+                    } else {
+                        header.style.transform = 'scale(1)';
+                        header.style.height = '100vh';
+                        header.classList.remove('scrolled');
+                    }
+                    ticking = false;
+                });
+                ticking = true;
+            }
+        });
+
+        // Initial check for scroll position
+        if (window.scrollY === 0) {
+            header.classList.remove('scrolled');
+        }
+    </script>
 </body>
 </html>
-
